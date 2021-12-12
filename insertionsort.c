@@ -39,11 +39,11 @@ void insert_sort(int arr[],int size)
     {
         key = arr[i];
         j = i - 1;
-        while(j >= 0 && key > arr[j])
+        while(j >= 0 && key < arr[j])
         {
-            arr[j+1] = a[j];
+            arr[j+1] = arr[j];
             j -= 1;
         }
-        a[j] = key;
+        arr[j] = key;
     }
 }
